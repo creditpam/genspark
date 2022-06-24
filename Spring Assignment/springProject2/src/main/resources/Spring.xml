@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+    <context:component-scan base-package="org.genspark"/>
+    <bean id="ph1" class="org.genspark.Phone">
+        <property name="mob" value="+1(977) 1232121"/>
+    </bean>
+    <bean id="ph2" class="org.genspark.Phone">
+        <property name="mob" value="+1(934) 12334121"/>
+    </bean>
+
+<!--    <bean id="Person" class="org.genspark.student" >-->
+<!--&lt;!&ndash;        <property name="name" value="Guy Joseph"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="add" ref="Address"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="id" value="007"/>&ndash;&gt;-->
+<!--        <property name="ph">-->
+<!--            <list>-->
+<!--                <ref bean="ph1" />-->
+<!--                <ref bean="ph2"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    <bean id="Address" class="org.exampl.Address">-->
+<!--        <property name="city" value="Atlanta"/>-->
+<!--        <property name="state" value="Georgia"/>-->
+<!--        <property name="country" value="USA"/>-->
+<!--        <property name="zipcode" value="122345"/>-->
+<!--    </bean>-->
+</beans>
